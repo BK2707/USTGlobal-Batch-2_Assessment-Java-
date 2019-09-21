@@ -1,0 +1,38 @@
+package com.dev.gmail;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+
+
+public class Imp implements Curd {
+	HashMap<String,Account> hs1 = new HashMap<String,Account>();
+	HashSet<Inbox> hs2 = new HashSet<Inbox>();
+	static Scanner sc = new Scanner(System.in);
+
+
+	@Override
+	public void addAccount(String key,Account ac) {
+		hs1.put("1",ac);
+		System.out.println(hs1);
+				
+	}
+
+
+	@Override
+	public void addInbox(Inbox in) {
+		hs2.add(in);
+		
+	}
+
+
+	@Override
+	public void showInbox() {
+		Inbox in = new Inbox();
+		System.out.println(in.getMessage_id());
+		System.out.println(in.getMessage());
+		
+		
+	}
+
+}

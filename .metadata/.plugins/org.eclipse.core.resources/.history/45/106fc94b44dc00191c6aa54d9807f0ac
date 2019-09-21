@@ -1,0 +1,8 @@
+package com.dev.gmail;
+
+public interface Curd {
+
+	public void add();
+	public void show();
+	
+}

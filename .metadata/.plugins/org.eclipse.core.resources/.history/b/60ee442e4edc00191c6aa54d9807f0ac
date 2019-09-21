@@ -1,0 +1,30 @@
+package com.dev.gmail;
+
+import java.util.HashSet;
+
+public class Imp implements Curd {
+	HashSet<Account> hs1 = new HashSet<Account>();
+	HashSet<Inbox> hs2 = new HashSet<Inbox>();
+
+
+	@Override
+	public void show() {
+		System.out.println(hs1);
+		System.out.println(hs2);
+	}
+
+
+	@Override
+	public void addAccount(Account ac) {
+		hs1.add(ac);
+				
+	}
+
+
+	@Override
+	public void addInbox(Inbox in) {
+		hs2.add(in);
+		
+	}
+
+}

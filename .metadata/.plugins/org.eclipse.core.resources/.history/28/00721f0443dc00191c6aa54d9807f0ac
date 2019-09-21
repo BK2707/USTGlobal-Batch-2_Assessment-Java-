@@ -1,0 +1,51 @@
+package com.dev.gmail;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class Main_Gmail extends Inbox {
+
+	public static void main(String[] args) {
+		HashSet<Account> hs1 = new HashSet<Account>();
+		HashSet<Inbox> hs2 = new HashSet<Inbox>();
+		
+		Main_Gmail mg1 = new Main_Gmail();
+		mg1.setUser_id(101);
+		mg1.setUser_name("Balakrishna Mandal");
+		mg1.setPassword(2707);
+		mg1.setEmail("mandalbalakrishna@gmail.com");
+		
+		Main_Gmail mg2 = new Main_Gmail();
+		mg2.setUser_id(102);
+		mg2.setUser_name("Abhinash Choudhary");
+		mg2.setPassword(1545);
+		mg2.setEmail("abhinch@gmail.com");
+		
+		Main_Gmail mg3 = new Main_Gmail();
+		mg3.setUser_id(103);
+		mg3.setUser_name("Rajesh Singh");
+		mg3.setPassword(7996);
+		mg3.setEmail("rajesh204@gmail.com");
+		
+		Main_Gmail mg4 = new Main_Gmail();
+		mg4.setUser_id(104);
+		mg4.setUser_name("Taniya Kumar");
+		mg4.setPassword(2408);
+		mg4.setEmail("kumartaniya@gmail.com");
+		
+		Main_Gmail mg5 = new Main_Gmail();
+		mg5.setUser_id(105);
+		mg5.setUser_name("Sheja Sinha");
+		mg5.setPassword(6426);
+		mg5.setEmail("shejasinha@gmail.com");
+		
+	    hs1.add(mg1);
+	    hs1.add(mg2);
+	    hs1.add(mg3);
+	    hs1.add(mg5);
+		
+		
+
+	}
+
+}

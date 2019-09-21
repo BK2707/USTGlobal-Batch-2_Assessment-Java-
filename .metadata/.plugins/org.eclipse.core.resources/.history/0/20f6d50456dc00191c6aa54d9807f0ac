@@ -1,0 +1,8 @@
+package com.dev.gmail;
+
+public interface Curd {
+
+	public void addAccount(String key,Account ac);
+	public void addInbox(Inbox in);
+	public void showInbox();
+}
